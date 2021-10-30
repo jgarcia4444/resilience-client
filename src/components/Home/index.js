@@ -1,4 +1,4 @@
-import React, { Component, createRef } from 'react';
+import React, { Component, } from 'react';
 import { Container, } from 'react-bootstrap';
 import ReactPlayer from 'react-player/youtube';
 import {FaVolumeMute, FaVolumeUp} from "react-icons/fa";
@@ -12,21 +12,31 @@ class Home extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            leavingPage: false,
             muteSwitch: true,
         }
-        this.iFrameContainerRef = createRef();
+    }
+
+    changeMuteValue = () => {
+        console.log('What the Fuck!');
+        this.setState({
+            ...this.state,
+            muteSwitch: !this.state.muteSwitch
+        })
     }
 
     render() {
 
-        const { leavingPage, muteSwitch } = this.state;
+        const { muteSwitch } = this.state;
+        let muteButton = muteSwitch ? <FaVolumeMute className="mute-btn" /> : <FaVolumeUp className="mute-btn" />;
 
         return(
             <Container fluid className="home-container">
                 <div className="home-top-row">
+                    <div onClick={this.changeMuteValue} className="mute-btn-container">
+                        {muteButton}
+                    </div>
                     <div className="video-container">
-                        <ReactPlayer width='100%' height='100%' loop={true} playing={true} controls={false} muted={muteSwitch} url='https://www.youtube.com/watch?v=RSd_zOdqIfs' />
+                        <ReactPlayer className="video-player" width='100%' height='100%' loop={true} playing={true} controls={false} volume={muteSwitch ? 0 : 1} muted={muteSwitch} url='https://www.youtube.com/watch?v=RSd_zOdqIfs' />
                     </div>
                     <div className="content">
                         <div className="page-title-container">

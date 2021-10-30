@@ -29,6 +29,10 @@ class WhoWeHelp extends Component {
                 title: 'Spirituality',
                 content: "We all want a sense of purpose or a deeper meaning in life. Usually we question our purpose in life when an unfortunate circumstance happens. Here at Resilience, our team provides the support and guidance to help you achieve your spiritual goals. We make sure our values and beliefs stay separate from yours and (while we work with you through this) allow you to create your own meaning."
             },
+            {
+                title: 'Career',
+                content: 'Finding a career can be a pain. It becomes more of an issue when we have pressures from family, friends, and our whole society, to pick a career we are not passionate about. We end up living a life for others and not for ourselves. We forget what we are passionate about and burn out quickly. Here at Resilience, we help you stop stressors that limit you from doing what you love. While creating new options that will decrease the fear of failing, and create a fulfilled life for you.'
+            }
         ]
 
     }

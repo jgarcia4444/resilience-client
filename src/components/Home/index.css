@@ -31,6 +31,33 @@
     padding-top: 7vh;
     padding-bottom: 3vh;
     background-color: rgba(0, 0, 0, 0.3);
+    z-index: 0;
+}
+
+.mute-btn-container {
+    height: 40px;
+    position: fixed;
+    right: 0;
+    width: 50px;
+    top: 150px;
+    z-index: 1000;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 0 3px -1px #333;
+}
+
+.mute-btn-container:hover {
+    cursor: pointer;
+}
+
+.mute-btn {
+    color: #000;
+    width: 30px;
+    height: 30px;
 }
 
 .page-title {
@@ -48,4 +75,8 @@
 .resilience-def-container>h6 {
     color: #fff;
     font-size: 36px;
+}
+
+.video-player {
+    z-index: -10;
 }
