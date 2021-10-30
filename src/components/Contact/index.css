@@ -1,0 +1,14 @@
+
+
+.form-label {
+    margin: 0 0 0 5%;
+    font-weight: 300;
+}
+
+.submit-btn {
+    width: 50%;
+    margin: 0 auto;
+}
+.send-message-title {
+    text-align: left;
+}

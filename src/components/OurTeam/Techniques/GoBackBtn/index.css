@@ -1,0 +1,17 @@
+.go-back-btn {
+    display: block;
+    width: 75px;
+    text-align: center;
+    padding: 5px 10px;
+    border: 1px solid #000;
+    transition: border-radius 200ms, background-color 200ms, font-weight 200ms;
+}
+
+.go-back-btn:hover {
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #000;
+    font-weight: 900;
+    box-shadow: 0 0 2px 0 #333;
+    color: #fff;
+}

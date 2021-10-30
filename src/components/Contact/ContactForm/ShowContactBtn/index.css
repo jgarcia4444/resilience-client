@@ -1,0 +1,26 @@
+.show-contact-form-btn {
+    display: block;
+    width: 125px;
+    text-align: center;
+    padding: 7px 3px;
+    margin-bottom: 10px;
+}
+
+.show-contact-form-btn:hover {
+    cursor: pointer;
+}
+
+.basic-btn {
+    color: #2266ff;
+    border: 2px solid #2266ff;
+    transition: border-radius 300ms, background-color 300ms, box-shadow 300ms, font-weight 300ms;
+}
+
+.basic-btn:hover {
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #2266ff;
+    color: #fff;
+    box-shadow: 0 0 3px -1px #333;
+    font-weight: 900;
+}

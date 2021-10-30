@@ -1,0 +1,90 @@
+
+.bio-container {
+    margin-top: 10%;
+}
+
+.bio-portrait {
+    border-radius: 50%;
+    transition: box-shadow 300ms;
+    width: 75%;
+    margin: 0 auto;
+    display: block;
+}
+
+.bio-portrait:hover {
+    box-shadow: 0 0 3px -1px #333;
+    cursor: pointer;
+}
+
+.bio-name {
+    text-align: center;
+    font-weight: 900;
+}
+
+.bio-description {
+    margin: 5% 0 0 0;
+}
+
+.bio-video {
+    width: 100%;
+    height: 300px;
+}
+
+@media only screen and (max-width: 1399px) {
+
+    .bio-video {
+        height: 275px;
+    }
+
+}
+
+@media only screen and (max-width: 1199px) {
+
+    .bio-video {
+        height: 250px;
+    }
+
+}
+
+@media only screen and (max-width: 991px) {
+
+    .bio-video {
+        height: 300px;
+    }
+
+}
+
+.read-btn {
+    background-color: none;
+    border: 2px solid #000;
+    display: block;
+    width: 120px;
+    text-align: center;
+    padding: 5px 2px;
+    transition: border-radius 300ms, background-color 300ms, font-weight 300ms, box-shadow 300ms;
+}
+
+.read-btn:hover {
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px;
+    font-weight: 900;
+    cursor: pointer;
+    box-shadow: 0 0 3px 1px #333;
+}
+
+.read-more-content {
+    animation-name: Appear;
+    animation-iteration-count: 1;
+    animation-duration: 400ms;
+}
+
+
+@keyframes Appear {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
