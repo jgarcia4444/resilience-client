@@ -43,7 +43,7 @@ class Home extends Component {
                             <h1 className="page-title">RESILIENCE</h1>
                         </div>
                         <div className="resilience-def-container">
-                            <h6>Overcoming challenges and achieve more than what you believe is possible.</h6>
+                            <h6>Overcome challenges and achieve more than what you believe is possible.</h6>
                         </div>
                     </div>
                 </div>

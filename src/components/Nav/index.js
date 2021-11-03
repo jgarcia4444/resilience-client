@@ -2,6 +2,8 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { NavLink as Link } from 'react-router-dom';
 
+import logo from '../../media/imgs/logos/sm-logo.gif';
+
 import './index.css';
 
 const Nav = () => {
@@ -10,12 +12,20 @@ const Nav = () => {
         const navItems = ["Home", "About", "Contact"];
         return navItems.map(item => { 
             let slug = slugify(item);
-            return ( 
-                <Col key={item} sm={4}>
-                    <Link to={`/${slug}`} className="nav-links" href="#">{item}</Link>
-                </Col>
+            return (
+                    <Link to={`/${slug}`} className="nav-link" href="#">
+                        {dynamicIcon()}
+                        {item}
+                    </Link>
             )
         })
+    }
+
+    const dynamicIcon = (iconName) => {
+        switch(iconName) {
+            default:
+                return
+        }
     }
 
     const slugify = (navLink) => {
@@ -37,9 +47,14 @@ const Nav = () => {
 
     return (
         <Container fluid className="nav-container">
-            <Row>
+            <div className="nav-logo-container">
+                <a href="/">
+                    <img src={logo} className="" />
+                </a>
+            </div>
+            <div className="nav-links-container">
                 {renderNavItems()}
-            </Row>
+            </div>
         </Container>
     )
 }
